@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VerveSelect – Curated Lifestyle Insights</title>
+    <meta
+      name="description"
+      content="VerveSelect is a minimalist lifestyle blog covering fashion, health & beauty, home & garden, travel, finance, and food & beverages."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="vs-header">
+      <div class="vs-container vs-header-inner">
+        <a href="index.html" class="vs-logo">
+          <span class="vs-logo-mark">V</span>
+          <span class="vs-logo-text">VerveSelect</span>
+        </a>
+        <nav class="vs-nav" aria-label="Primary">
+          <button
+            class="vs-nav-toggle"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span></span><span></span>
+          </button>
+          <ul class="vs-nav-list">
+            <li><a href="index.html" class="is-active">Blog</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="vs-main">
+      <section class="vs-hero">
+        <div class="vs-container vs-hero-inner">
+          <div class="vs-hero-text">
+            <h1>Calm, Curated Choices for a Modern Life</h1>
+            <p>
+              VerveSelect brings together quietly confident recommendations
+              across fashion, wellness, home, travel, finance, and food so you
+              can focus on what matters.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="vs-blog-layout">
+        <div class="vs-container vs-grid">
+          <aside class="vs-sidebar">
+            <div class="vs-card vs-card--soft">
+              <h2 class="vs-sidebar-heading">Categories</h2>
+              <ul class="vs-category-list" id="categoryFilter">
+                <li><button data-category="all" class="is-active">All</button></li>
+                <li>
+                  <button data-category="Fashion & Accessories">
+                    Fashion & Accessories
+                  </button>
+                </li>
+                <li>
+                  <button data-category="Health & Beauty">
+                    Health & Beauty
+                  </button>
+                </li>
+                <li>
+                  <button data-category="Home & Garden">
+                    Home & Garden
+                  </button>
+                </li>
+                <li>
+                  <button data-category="Travel & Stays">
+                    Travel & Stays
+                  </button>
+                </li>
+                <li>
+                  <button data-category="Finance & Insurance">
+                    Finance & Insurance
+                  </button>
+                </li>
+                <li>
+                  <button data-category="Food & Beverage">
+                    Food & Beverage
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="vs-card vs-card--soft">
+              <h2 class="vs-sidebar-heading">Search</h2>
+              <label class="vs-field">
+                <span class="vs-field-label">Find an article</span>
+                <input
+                  type="search"
+                  id="searchInput"
+                  placeholder="Search by title or keyword…"
+                />
+              </label>
+            </div>
+
+            <div class="vs-card vs-card--soft vs-social-widget">
+              <h2 class="vs-sidebar-heading">Stay connected</h2>
+              <p class="vs-muted">Follow VerveSelect on social media.</p>
+              <div class="vs-social-list">
+                <a href="https://www.instagram.com/verveselect" aria-label="VerveSelect on Instagram" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                    <circle cx="12" cy="12" r="4.2"></circle>
+                    <circle cx="17.2" cy="6.8" r="0.9"></circle>
+                  </svg>
+                </a>
+                <a href="https://twitter.com/verveselect" aria-label="VerveSelect on X (Twitter)" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M5 4l6.1 7.4L5 20h2.2L13 12.8 18 20h3l-6.3-7.9L20.5 4H18.3L12.9 10.5 8.5 4H5z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="https://www.pinterest.com/verveselect" aria-label="VerveSelect on Pinterest" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path
+                      d="M12.2 7C9.7 7 8 8.7 8 11c0 1.3.7 2.1 1.6 2.1.3 0 .6-.2.7-.6l.3-1.1c.1-.3 0-.4-.1-.7-.2-.3-.3-.7-.3-1.1 0-1.3.9-2.2 2.1-2.2 1 0 1.7.7 1.7 1.8 0 1.5-.8 2.6-1.7 2.6-.5 0-1-.3-.9-1l.3-1.3c.1-.6.2-1.2.2-1.6"
+                      fill="#fff"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </aside>
+
+          <section class="vs-blog-listing" aria-label="Blog posts">
+            <div
+              id="postsContainer"
+              class="vs-posts-grid"
+              data-page-size="3"
+            ></div>
+
+            <div class="vs-pagination" id="paginationControls"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="vs-footer">
+      <div class="vs-container vs-footer-inner">
+        <p class="vs-muted">&copy; 2025 VerveSelect. All rights reserved.</p>
+        <div class="vs-footer-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="products.html">Product Reviews</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/posts.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+
